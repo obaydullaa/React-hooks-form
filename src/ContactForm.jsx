@@ -73,7 +73,7 @@ export default function ContactForm() {
             <Form.Group as={Row} className='mb-4'>
                 <Col sm={3} >
                     <Form.Label htmlFor='lastName' column>
-                        First name
+                        Last name
                     </Form.Label>
                 </Col>
                 <Col sm={9}>
@@ -112,25 +112,6 @@ export default function ContactForm() {
                 <Col sm={3} >
                     <Form.Label htmlFor='profession' column>
                         Profession
-                    </Form.Label>
-                </Col>
-                <Col sm={9}>
-                    <Form.Control
-                        type="text"
-                        id='profession'
-                        placeholder="Enter Your Profession"
-                        {...register('profession')}
-                        isInvalid={errors?.profession}
-                    />
-                    <Form.Control.Feedback type='invalid'>
-                        {errors?.profession?.message}
-                    </Form.Control.Feedback>
-                </Col>
-            </Form.Group>
-            <Form.Group as={Row} className='mb-4'>
-                <Col sm={3} >
-                    <Form.Label htmlFor='profession' column>
-                        Gender
                     </Form.Label>
                 </Col>
                 <Col sm={9}>
